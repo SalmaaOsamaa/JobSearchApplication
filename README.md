@@ -10,8 +10,6 @@
 
 A web application for Listing Jobs , searching through jobs Api with search history and allows users to view jobs and skills..
 
-![Preview](./src/data/preview/1.png)
-
 ### Features
 
 - Jobs Listing
