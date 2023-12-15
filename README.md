@@ -48,7 +48,7 @@ A web application for Listing Jobs , searching through jobs Api with search hist
    ```sh
    cd wuzzuf-task
    ```
-3. install dependencies
+3. install dependencies & start
 
    ```bash
    npm install
