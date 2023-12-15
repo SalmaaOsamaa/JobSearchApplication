@@ -1,0 +1,33 @@
+.jobs {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 10px;
+  margin: auto;
+
+  .job {
+    width: 70%;
+    padding: 24px;
+    border-radius: 16px;
+    position: relative;
+    background-color: #fff;
+    box-shadow: 0 4px 24px -8px rgba(2, 48, 71, 0.2);
+    transition: all 400ms ease;
+
+    &:hover {
+      transform: scale(1.03);
+      box-shadow: 0 4px 24px -8px rgba(2, 48, 71, 0.5);
+    }
+    .wrapper{
+      display: flex;
+      justify-content: flex-start;
+      align-items:center;
+      flex-wrap: wrap;
+      gap: 10px;
+    
+    }
+  }
+}

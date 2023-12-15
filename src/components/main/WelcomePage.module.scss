@@ -1,0 +1,26 @@
+.container {
+    display: flex;
+    height: 100vh; 
+  }
+  
+  .imagehalf, .texthalf {
+    flex: 1; 
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+  }
+  
+  .imagehalf {
+    background-color: #fff; 
+  }
+  
+  .texthalf {
+    color: #fff;
+    font-size: 30px;
+    font-weight: 600;
+    background-color: #050F2D; 
+    flex-direction: column;
+    padding: 20px; 
+  }
+  
+  

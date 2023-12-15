@@ -1,0 +1,17 @@
+.jobsContainer {
+   display: grid;
+   grid-template-columns: 1fr 1fr ;
+   gap: 10px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: var(--grayColor400);
+    height: auto;
+
+  }
+  @media screen and (max-width:500px){
+   .jobsContainer{
+    display: grid;
+  grid-template-columns: 1fr; /* One column for each item */
+  gap: 10px; 
+   }
+  }

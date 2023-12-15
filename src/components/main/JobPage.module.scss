@@ -1,0 +1,56 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: var(--grayColor400);
+    padding: 20px 150px;
+    .cardContainer{
+         display: flex;
+         justify-content: space-between;
+        .skillsContainer{
+            width: 50%;
+            background-color: var(--whiteColor);
+            padding: 20px 30px;
+            strong{
+                padding-left: 12px;
+            }
+            .skillCard{
+                padding: 1px 10px;
+                border-radius: 4px;
+                width: 100%;
+                gap: 30px;
+                margin-top: 10px;
+            }
+        }
+        .jobsContainer{
+            width: 20%;
+            padding: 16px 20px;
+            background-color: #D9D9D9;
+            height: 90%;
+        }
+       
+    }
+}
+@media screen and (max-width:500px){
+    .container{
+        .cardContainer{
+            display: flex;
+            flex-direction: column;
+            .skillsContainer{
+                width: 100%;
+                .skillCard{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    margin: 10px auto;
+                    width: 100%;
+                }
+            }
+            .jobsContainer{
+                margin-top: 15px;
+                width: 100%;
+            }
+        }
+    }
+   }

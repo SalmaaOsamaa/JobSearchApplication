@@ -1,0 +1,13 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    img{
+        width: 50%;
+        height: 50%;
+    }
+    strong{
+        color: var(--primaryColor700);
+    }
+}

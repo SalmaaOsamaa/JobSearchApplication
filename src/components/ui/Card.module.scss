@@ -1,0 +1,40 @@
+.card{
+border: 1px solid var(--greyColor200);
+gap: 10px;
+margin-bottom: 30px;
+background-color: var(--greyColor200);
+border-radius: 4px;
+padding:  15px;
+transition: all 400ms ease;
+cursor: pointer;
+box-shadow: 0 4px 24px -8px rgba(2, 48, 71, 0.2);
+transition: all 400ms ease;
+
+    &:hover {
+      transform: scale(1.03);
+      box-shadow: 0 4px 24px -8px rgba(2, 48, 71, 0.5);
+    }
+.tags{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+  
+  
+}
+
+}
+
+@media screen and (max-width:500px){
+  .card{
+    display: flex;
+    flex-direction: column;
+    div{
+      display: flex;
+      flex-direction: column;
+    }
+    .tags{
+      white-space: nowrap;
+    }
+  }
+}

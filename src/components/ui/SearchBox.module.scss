@@ -1,0 +1,32 @@
+.searchContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  position: relative;
+  margin: 20px 0;
+  .searchInput {
+    padding: 10px 20px 10px 45px ;
+    width: 160px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-position: 2% 50%;
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: 30px;
+    background-image: url(../../assets/images/iconsearch.svg);
+    background-color: var(--grayColor600);
+    outline: none;
+    transition: 0.5s all ease-in-out;
+    filter: brightness(170%);
+    &:focus{
+      
+      background-image: none;
+      width: 400px;
+      background-color: #ffff;
+      filter: brightness(100%);
+    }
+    
+  }
+  
+}
