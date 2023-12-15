@@ -22,3 +22,45 @@ A web application for Listing Jobs , searching through jobs Api with search hist
   ![Preview](./src/assets/data/skilldetails.jpeg)
 - Job listing for every skill
   ![Preview](./src/assets/data/jobdetails.jpeg)
+
+### Built With
+
+- React
+- ReactRouter
+- Sass
+
+<p align="right">(<a href="#top">back to top</a>)</p>
+
+<!-- GETTING STARTED -->
+
+## Getting Started
+
+> To get a local copy, follow these simple steps :
+### Installation
+#### installing Locally
+1. Clone the repo
+
+  ```sh
+   git clone https://github.com/SalmaaOsamaa/JobSearchApplication.git
+   ```
+   2. go to project folder
+
+   ```sh
+   cd wuzzuf-task
+   ```
+3. install dependencies
+
+   ```bash
+   npm install
+   ```
+
+   4. start the project
+
+   ```sh
+   npm start
+   ```
+ 5. To run tests
+
+```sh
+   npm run test 
+   ```
