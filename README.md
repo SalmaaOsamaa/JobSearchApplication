@@ -15,7 +15,6 @@ A web application for Listing Jobs , searching through jobs Api with search hist
 ### Features
 
 - Jobs Listing
-  ![Preview](./src//assets/data/home.jpeg)
   ![Preview](./src/assets/data/home.jpeg)
 -  Jobs Search with Search History
   ![Preview](./src/assets/data/home.jpeg)
