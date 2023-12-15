@@ -5,20 +5,14 @@ import Tag from '../ui/Tag';
 import { useNavigate } from 'react-router-dom';
 // import Tag from './Tag';
 
-function JobCard({ job,  }) {
+function JobCard({ job }) {
   const [skills,setSkills] = useState([])
   const navigate = useNavigate()
+  //extracting keys from prop 
   const { id,type, attributes, relationships} = job;
   const { title: jobTitle } = attributes;
   const skillsIds = relationships?.skills;
-  
-
-  const handleCardClick = () => {
-    navigate(`/job/${id}`);
-  };
-  
-  useEffect( () => {
-    return async () => {
+  const fetchSkills = async () => {
       if(skillsIds.length){
         let fetchedSkills = []
         for (let i = 0; i < skillsIds.length; i++) {
@@ -32,9 +26,18 @@ function JobCard({ job,  }) {
         setSkills(fetchedSkills)
       } 
     }
+  useEffect( () => {
+    const timeoutId = setTimeout(() => {
+      fetchSkills()
+    }, 2000);
+    return () => {
+clearTimeout(timeoutId)
+    } 
   }, [skillsIds]);
 
-
+  const handleCardClick = () => {
+    navigate(`/job/${id}`);
+  };
   return (
     <>
       <div className={styles.jobs}>

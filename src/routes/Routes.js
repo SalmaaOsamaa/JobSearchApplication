@@ -5,12 +5,13 @@ import SearchBox from "../components/ui/SearchBox";
 import JobPage from '../components/main/JobPage'
 import SkillDetailsPage from '../components/main/SkillDetailsPage'
 import ErrorLayout from "../components/layouts/ErrorLayout";
+import SearchHistoryPage from "../components/main/SearchHistoryPage";
 
  export const router = createBrowserRouter(
     createRoutesFromElements(
       <Route path="/" element={<RootLayout/>}>
         <Route path="/jobs" element={<JobListingPage/>} errorElement={<ErrorLayout error={{ message: 'Page not found' }}/>}/>
-        <Route path="/jobs/search" element={<SearchBox/>} errorElement={<ErrorLayout error={{ message: 'Page not found' }}/>}/>
+        <Route path="/jobs/search" element={<SearchHistoryPage/>} errorElement={<ErrorLayout error={{ message: 'Page not found' }}/>}/>
         <Route path="job/:id" element={<JobPage/>} errorElement={<ErrorLayout error={{ message: 'Page not found' }}/>}/>
         <Route path="skill/:id" element={<SkillDetailsPage/>} errorElement={<ErrorLayout error={{ message: 'Page not found' }}/>}/>
       </Route>

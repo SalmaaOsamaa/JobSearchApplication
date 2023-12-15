@@ -1,7 +1,6 @@
 import React from 'react'
 import styles from './SearchBox.module.scss'
 function SearchBox({onSearch,searchInput}) {
-  console.log(searchInput,"searchinput");
     return (
       <div className={styles.searchContainer}>
           <input
