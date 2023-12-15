@@ -15,11 +15,11 @@ A web application for Listing Jobs , searching through jobs Api with search hist
 ### Features
 
 - Jobs Listing
-  ![Preview](./src/assets/data/Home.jpeg)
-  ![Preview](./src/assets/data/Home.jpeg)
+  ![Preview](./src//assets/data/home.jpeg)
+  ![Preview](./src/assets/data/home.jpeg)
 -  Jobs Search with Search History
-  ![Preview](./srcassets/data/Home.jpeg)
+  ![Preview](./src/assets/data/home.jpeg)
 - Skills listing For each job 
-  ![Preview](./srcassets/data/skilldetails.jpeg)
+  ![Preview](./src/assets/data/skilldetails.jpeg)
 - Job listing for every skill
-  ![Preview](./srcassets/data/jobdetails.jpeg)
+  ![Preview](./src/assets/data/jobdetails.jpeg)
