@@ -1,7 +1,6 @@
 import { Route, createBrowserRouter, createRoutesFromElements } from "react-router-dom";
 import RootLayout from "../components/layouts/RootLayout";
 import JobListingPage from '../components/main/JobListingPage'
-import SearchBox from "../components/ui/SearchBox";
 import JobPage from '../components/main/JobPage'
 import SkillDetailsPage from '../components/main/SkillDetailsPage'
 import ErrorLayout from "../components/layouts/ErrorLayout";

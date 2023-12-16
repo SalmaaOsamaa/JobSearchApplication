@@ -28,5 +28,36 @@
     }
     
   }
+  .searchWrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    .suggestionsbox {
+      position: absolute;
+      background-color: var(--whiteColor);
+      border: 1px solid #ccc;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+      max-height: 200px;
+      overflow-y: auto;
+      width: 220px;
+      margin-top: 38px; 
+      z-index: 99;
+    }
+    
+    .suggestionitem {
+      padding: 8px;
+      cursor: pointer;
+      transition: background-color 0.2s ease;
+    
+      &:hover {
+        background-color: var(--grayColor400);
+      }
+    }
+    .selected {
+      background-color: #007bff;
+      color: #fff;
+    }
+  }
   
 }

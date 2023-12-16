@@ -8,12 +8,14 @@ import Spinner from '../ui/Spinner'
 const SEARCH_HISTORY_KEY = 'searchHistory';
 
 function SearchHistoryPage() {
+ 
   //states
   const [query, setQuery] = useState('');
   const [jobs, setJobs] = useState([]);
   const [searchHistory, setSearchHistory] = useState([]);
   const [count, setCount] = useState(null)
   const [loading,setLoading] = useState(false)
+  
   //custom hooks
   const debouncedValue = useDebounce(query, 2000)
 
@@ -37,8 +39,6 @@ function SearchHistoryPage() {
         const { meta } = data.data
         setCount(meta.count)
         setJobs(data.data.jobs);
-        console.log(jobs, "here is jobs");
-
         setSearchHistory((prevHistory) => {
           const newHistory = [...prevHistory, query];
           localStorage.setItem(SEARCH_HISTORY_KEY, JSON.stringify(newHistory));
