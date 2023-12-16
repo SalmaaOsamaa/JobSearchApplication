@@ -11,8 +11,8 @@ import ErrorLayout from '../layouts/ErrorLayout';
 function JobListingPage() {
   const [searchQuery, setSearchQuery] = useState('');
   const [loadMore,setLoadMore] = useState(true)
-  
-  const defaultApiUrl = 'https://skills-api-zeta.vercel.app/jobs?cursor=0&limit=12';
+  const [page, setPage] = useState(0)
+  const [defaultApiUrl, setDefaultApiUrl] = useState(`https://skills-api-zeta.vercel.app/jobs?cursor=${page}&limit=12`)
   // will handle if there was a search value
   const generateApiUrl = (searchQuery) => {
     return searchQuery
@@ -25,7 +25,7 @@ function JobListingPage() {
  
   const debouncedLoadMore = useDebounce(loadMore,700)
   useEffect(() => {
-
+    setDefaultApiUrl(defaultApiUrl => `https://skills-api-zeta.vercel.app/jobs?cursor=${page}&limit=12`)
   }, [debouncedLoadMore])
   const handleScroll = () => {
     // Calculate the scroll position.

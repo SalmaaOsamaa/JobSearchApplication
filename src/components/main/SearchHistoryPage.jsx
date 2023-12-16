@@ -58,8 +58,7 @@ function SearchHistoryPage() {
 
   return (
     <>
-      <SearchBox onSearch={(e) => setQuery(e)
-      } searchInput={query} />
+      <SearchBox onSearch={(e) => setQuery(e)} searchInput={query} />
       <div className={styles.container}>
 
 
@@ -70,7 +69,7 @@ function SearchHistoryPage() {
 
          {
           loading ? (
-<Spinner/>
+<Spinner />
           ) : (
             <div className={styles.searchResult}>
               <h2>{debouncedValue}({count})</h2>
@@ -83,11 +82,8 @@ function SearchHistoryPage() {
                   ))
                 )}
               </>
-
-            </div>
-          )
-         }
-            <div className={styles.searchHistory}>
+              <div className={styles.searchHistoryWrapper}>
+              <div className={styles.searchHistory}>
               <>
                 <strong>Search History:</strong>
                 <ul>
@@ -97,6 +93,11 @@ function SearchHistoryPage() {
                 </ul>
               </>
             </div>
+            </div>
+            </div>
+          )
+         }
+            
           </div>
         )}
 
